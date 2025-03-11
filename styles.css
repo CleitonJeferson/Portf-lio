@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 35%);
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(44, 41, 41);
+    padding: 5px;
+}
+
+.titulo{
+    font-family: sans-serif;
+    text-align: left;;
+    margin-left: 15px;
+}
+
+.titulo a{
+    color: orange;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: -12px;
+    padding: 5px;
+    justify-content: right;
+}
+
+nav ul li{
+    margin: -10px 20px;
+    margin-top: -26px;
+    font-family: sans-serif;
+    text-decoration: bold;
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.inicionav{
+    color: orange;
+}
+
+nav ul li a::after{
+    display: flex;
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 110%;
+}
+
+.sessao1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: left;
+    font-family: sans-serif;
+    margin-top: 100px;
+    
+}
+
+.nome{
+    text-align: left;
+    margin-left: 195px;
+    font-size: 50px;
+}
+
+.p1{
+    text-align: left;
+    margin-left: 193px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.p2{
+    text-align: left;
+    margin-left: 185px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+section .curriculo{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0 0 195px;
+}
+
+section .curriculo button{
+    background-color: orange;
+    width: 200px;
+    border-radius: 50px;
+    color: black;
+}
+
+section .curriculo button a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.sessaoimg{
+    display: flex;
+}
+
+.imagem1{
+    display: flex;
+    margin-left: 800px;
+    margin-top: -250px;
+    width: 450px;
+    height: auto;
+}
+
+.sessao2{
+    margin-top: -0px;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+}
+
+.article1, .imagem2{
+    display: flex;
+    height: auto;
+    width: 500px;
+    padding: 40px;
+}
+
+.article2{
+    font-family: sans-serif;
+    color: white;
+}
+
+b{
+    color: orange;
+    position: relative;
+}
+
+b::before{
+    content: "__";
+    position: absolute;
+    top: -10px;
+    left: -25px;
+}
+
+.nome2{
+    margin-top: 10px;
+    margin-left: 85px;
+}
+
+.p3{
+    margin-top: 80px;
+    margin-left: 110px;
+}
+
+.sobremim{
+    text-align: justify;
+    display: flex;
+    width: 80%;
+    margin: 20px 57px 0 auto;
+}
+
+.posters{
+    font-family: sans-serif;
+    display: flex;
+    height: 50px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.imagem3, .imagem4, .imagem5, .imagem6{
+    display: flex;
+    width: 150px;
+    height: auto;
+    position: relative;
+    top: 380px;
+    right: 600px;
+}
+
+.paragrafosimg1, .paragrafosimg2, .paragrafosimg3, .paragrafosimg4{
+    display: flex;
+    width: 150px;
+    height: auto;
+    position: relative;
+    top: 403px;
+    right: 410px;
+    color: white;
+    font-weight: bold;
+}
+
+.sessao5{
+    width: auto;
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.projetos-port{
+    font-size: 21px;
+    padding: 20px;
+    margin-top: -13px;
+    text-align: center;
+}
+
+.articlelist{
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    width: 38%;
+}
+
+.p-estilo{
+    display: flex;
+    background-color: rgb(109, 109, 109);
+    font-family: monospace;
+    border-radius: 4px;
+    width: 42px;
+    margin: 10px 0 0 190px;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
+
+.p-estilo1{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 180px;
+    margin-top: -38px;
+    margin-left: 185px;
+}
+
+.ul-projetos{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    list-style: none;
+}
+
+.li-projetos2{
+    display: flex;
+    flex-basis: 280px;
+    text-align: center;
+    background-color: #333030;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.li-projetos2:hover{
+    background-color: #222222; /* Mudando a cor de fundo ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.div-projetos2 img{
+    padding: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.name-layouts{
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.name-tag{
+    margin-left: -20px;
+    font-size: 18px;
+}
+
+.name-tag1{
+    margin-left: -20px;
+    font-size: 14px;
+}
+
+.articlelist2{
+    display: flex;
+    background-color: rgb(49, 49, 49);
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin-left: 535px;
+    margin-top: -240px;
+    list-style: none;
+}
+
+.ul-projetos1 {
+    list-style: none;
+}
+
+
+.articlelist2 img{
+    display: flex;
+    margin-top: 7px;
+    margin-left: 8px;
+    width: auto;
+    height: 25px;
+}
+
+.div-projetos3{
+    background-color: gray;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 300px;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+
+.p-estilo2{
+    display: flex;
+    margin: -27px 0 0 350px;
+    font-weight: bold;
+}
+
+.experiencia-item{
+    padding: 30px;
+}
+
+.subtitulo-h3{
+    padding: 10px;
+    position: relative;
+}
+
+.subtitulo-h3::before{
+    content: "•";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px; 
+}
+
+.subtitulo-h3-1{
+    color: black;
+    font-weight: bold;
+    margin: -8px 0 0 9px;
+}
+
+.subtitulo-p2{
+    padding: 10px;
+}
+
+.sessao3{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px 0;
+}
+
+.servicos{
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sessao4, .ultimas{
+    display: flex;
+    width: 500px;
+    height: 90px;
+    margin: 1px 0 10px 28px;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.ultimas:hover{
+    transform: scale(1.3);
+    transform: rotate(35deg);
+}
+
+.redes{
+    display: flex;
+}
+
+footer{
+    background-color: rgb(68, 68, 68);
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.rodape a{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1020px) {
+    .titulo{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .menu-navegacao {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .sessao1, .nome, .p1, .p2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    section .curriculo{
+        display: flex;
+        width: 50%;
+        margin:0 0 10px 100px;
+        height: 35px;
+        max-width: 50%;
+    }
+
+    .sessaoimg {
+        justify-content: center;
+    }
+
+    .imagem1 {
+        margin: 5px;
+        margin-left: 20px;
+        width: 400px;
+        max-width: 350px;
+        height: auto;
+        display: flex;
+    }
+
+    .sobremim {
+        text-align: justify;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .sessao2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .article1, .imagem2 {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        display: block;
+        margin: auto;
+    }
+
+    .nome2, .p3, .b {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .imagem3, .imagem4, .imagem5, .imagem6 {
+        width: 53px;
+        height: auto;
+        position: static;
+        margin: 10px;
+    }
+
+    .paragrafosimg1, .paragrafosimg4 {
+        position: static;
+        margin-top: 10px;
+        margin-left: 8px;
+        width: 100%;
+    }
+
+    .paragrafosimg2{
+        position: static;
+        margin-top: 10px;
+        margin-left: 21px;
+        width: 100%;
+    }
+
+    .paragrafosimg3{
+        position: static;
+        margin-top: 10px;
+        margin-left: 26px;
+        width: 100%;
+    }
+
+    .sessao4, .ultimas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        width: 80%;
+        max-width: 180px;
+        height: auto;
+        margin: 5px auto;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .sessao4 img, .ultimas img {
+        width: 50px;
+        height: auto;
+    }
+
+    .sessao3 {
+        padding: 20px;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ultimas{
+        width: 10px;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .articlelist {
+        width: 100%;
+    }
+
+    .ul-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .articlelist2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        display: block; /* Evita problemas de alinhamento */
+    }
+
+    .p-estilo {
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .p-estilo1 {
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .div-projetos3 {
+        margin-left: 50px;
+        margin-right: auto;
+    }
+
+    .p-estilo2 {
+        margin: -38px 0 0 90px;
+        padding: 10px;
+    }
+}
